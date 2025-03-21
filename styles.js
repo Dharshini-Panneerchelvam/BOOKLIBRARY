@@ -46,14 +46,14 @@ export default StyleSheet.create({
     flex: 1,  // Allow the title to take as much space as possible
   },
   returnButton: {
-    backgroundColor: '#5b408b',  // Tomato color for the button
+    backgroundColor: '#5b408b',
     paddingVertical: 8,
     paddingHorizontal: 15,
     borderRadius: 5,
   },
   returnButtonText: {
     color: '#fff',
-    fontSize: 14,  // Adjust the size of the button text
+    fontSize: 14,
     fontWeight: 'bold',
     textAlign: 'center',
   },
