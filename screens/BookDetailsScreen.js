@@ -39,12 +39,12 @@ export default function BookDetailsScreen({ route, navigation }) {
   
       // Attempt to add the book to borrowedBooks collection
       const docRef = await addDoc(collection(db, 'borrowedBooks'), {
-        userId: 'user123',  // Replace with actual user ID
-        bookId: book.id,    // Ensure this is the correct book ID
-        title: book.title,  // Make sure `book.title` is available
-        borrowedAt: new Date().toISOString(), // Optionally track when the book was borrowed
+        userId: 'user123', 
+        bookId: book.id,
+        title: book.title,
+        borrowedAt: new Date().toISOString(),
       });
-      console.log("Book added to borrowedBooks with ID: ", docRef.id); // Log document ID
+      console.log("Book added to borrowedBooks with ID: ", docRef.id);
   
       // Update Firestore book availability
       const bookRef = doc(db, 'books', book.id);
